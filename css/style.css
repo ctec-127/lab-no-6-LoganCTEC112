@@ -1,10 +1,12 @@
 /* CSS for lab6.php */
 
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     width: 800px;
-    margin: 0 auto;
+    margin: 0 auto auto 15px;
+    
 }
 
 label {
@@ -12,13 +14,40 @@ label {
     width: 240px;
 }
 
-.group {
-    margin: 20px 0 20px 0;
+form {
+    margin-top: 5rem;
 }
 
+.group {
+    margin: 20px 0 20px 0;
+    font-size: 1.25rem;
+}
+
+input[type=text] {
+    height: 2rem;
+    font-size: 1.2rem;
+    width: 7.5rem;
+    
+}
+
+select {
+    height: 2.5rem;
+    width: auto;
+    font-size: 1.2rem;
+}
 input[type=submit] {
     background: #336699;
     color: #fff;
     padding: 10px;
-    font-size: 1em;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 6px #999;
+}
+input[type=submit]:hover {
+    background: #33995a;
+}
+input[type=submit]:active {
+    background-color: rgb(212, 62, 62);
+    box-shadow: 0 3px #666;
+    transform: translateY(2px);
 }
