@@ -2,7 +2,7 @@
 
     // function to calculate converted temperature
     function convertTemp($temp, $unit1, $unit2)
-    {
+    {   $newTemp = 0;
         if ($unit1 == 'celsius') {
             if ($unit2 == 'fahrenheit') {
                 $newTemp = $temp * 9/5 + 32;
